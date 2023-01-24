@@ -28,6 +28,7 @@ const BlogPostTemplate = ({
         />
         <hr />
         <footer>
+        <Link to="/">👈回到主页</Link>
           <Bio />
         </footer>
       </article>
