@@ -1,7 +1,7 @@
 ---
-title: 记录使用 Lib.Harmony 时注入过程中遇到的一个坑
-date: "2022-06-28T22:40:32.169Z"
-description: 我一开始猜想这可能类似于 **CE(Cheat Engine)** 那样，从内存的层面上去修改一些东西(感觉很复杂，没有研究过)。直到我偷偷地把它拖进了 dnSpy(一个反编译软件)，短暂地分析代码后，得出的结果让我大吃一惊——
+title: lib-harmony-1
+date: 2022-07-25 03:23:33
+tags: 踩坑
 ---
 ## 1. 从这里开始
 
@@ -61,7 +61,7 @@ description: 我一开始猜想这可能类似于 **CE(Cheat Engine)** 那样，
 >
 > Once you reference Harmony correctly, you should be able to import it by adding Harmony to your imports. That gives you code completion so you can discover the API:
 >
-> ```c#
+> ```csharp
 > using HarmonyLib;
 > ```
 >
@@ -69,7 +69,7 @@ description: 我一开始猜想这可能类似于 **CE(Cheat Engine)** 那样，
 >
 > Most patch operations require a Harmony instance. To instantiate Harmony, you simply call
 >
-> ```c#
+> ```csharp
 > var harmony = new Harmony("com.company.project.product");
 > ```
 >
@@ -79,7 +79,7 @@ description: 我一开始猜想这可能类似于 **CE(Cheat Engine)** 那样，
 >
 > If you prefer annotations to organize your patches, you instruct Harmony to search for them by using `PatchAll()`:
 >
-> ```c#
+> ```csharp
 > var assembly = Assembly.GetExecutingAssembly();
 > harmony.PatchAll(assembly);
 >
@@ -92,7 +92,7 @@ description: 我一开始猜想这可能类似于 **CE(Cheat Engine)** 那样，
 
   通过上面的教程(或者宵夜97的[教程](https://space.bilibili.com/1306433))可以写出 Lib.Harmony 的"初始化"代码
 
-```c#
+```csharp
 using System;
 using System.Windows.Froms; // 我们可以用 MessageBox 来看看有没有成功载入
 using HarmonyLib;
@@ -110,7 +110,7 @@ namespace MyPatch {
 
   似乎一切都没问题，现在寻找注入的方法。我还是参照了 TerrariaHelper 的方式，引用 FastWin32 包，调用里面的 InjectManaged 方法来进行注入。
 
-```c#
+```csharp
 bool Injector.InjectManaged(uint processId, string assemblyPath, string typeName, string methodName, string argument)
 ```
 
@@ -137,7 +137,7 @@ bool Injector.InjectManaged(uint processId, string assemblyPath, string typeName
 
   我发现了一个规律，只有当方法的返回值为 int 类型，且参数有且只有一个 string 类型变量时，才能成功被注入。
 
-```c#
+```csharp
 using System;
 using System.Windows.Froms; // 我们可以用 MessageBox 来看看有没有成功载入
 using HarmonyLib;
