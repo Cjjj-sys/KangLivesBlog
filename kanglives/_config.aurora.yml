@@ -96,7 +96,7 @@ socials:
 #! ---------------------------------------------------------------
 site_meta:
   cdn: cn
-  favicon:
+  favicon: https://img1.imgtp.com/2023/01/25/aTizWIWs.jpg
   description: ''
   keywords: ''
   author: ''
