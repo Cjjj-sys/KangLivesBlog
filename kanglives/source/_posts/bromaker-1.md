@@ -1,7 +1,10 @@
 ---
 title: BroMaker教程 [1]
 date: 2023-01-25 04:26:58
-tags: Broforce, C#, Mod
+tags: 
+	- Broforce
+	- CSharp
+	- Mod
 category: 教程
 cover: /img/bromaker-1.png
 ---

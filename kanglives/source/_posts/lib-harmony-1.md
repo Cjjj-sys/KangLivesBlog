@@ -1,7 +1,9 @@
 ---
 title: 记录使用 Lib.Harmony 时注入过程中遇到的一个坑
 date: 2022-07-25 03:23:33
-tags: Lib.Harmony, C#
+tags: 
+    - Lib.Harmony
+    - CSharp
 category: 踩坑
 cover: /img/lib-harmony.png
 ---

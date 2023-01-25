@@ -1,7 +1,11 @@
 ---
 title: 「教程」如何在BDS开启实验性内容（不用下载存档）
 date: 2023-01-25 06:15:55
-tags: Minecraft Bedrock Edition, 我的世界基岩版, NBT, BDS
+tags: 
+    - Minecraft Bedrock Edition
+    - 我的世界基岩版 
+    - NBT
+    - BDS
 category: 教程
 cover: /img/enable-experiment.png
 ---
@@ -30,7 +34,9 @@ cover: /img/enable-experiment.png
 
 
   这样不需要把庞大的存档下载到本地进行一系列繁琐的操作就可以轻松实现在BDS上开启实验性内容啦。
-:::tip
-如果没有找到实验性选项，可以手动添加那几个选项，切后面的数字为一，然后再把原来的选项删除。
-:::
+
+  :::tip
+  如果没有找到实验性选项，可以手动添加那几个选项，切后面的数字为一，然后再把原来的选项删除。
+  :::
+
   附上 NBT Studio 的下载链接: [https://github.com/tryashtar/nbt-studio/releases](https://github.com/tryashtar/nbt-studio/releases)
