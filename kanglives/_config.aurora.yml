@@ -130,7 +130,7 @@ valine:
   avatar: ' '
   placeholder: 留下你的想法~
   visitor: true
-  lang: cn
+  lang: zh_CN
   avatarForce: false
   meta: ['nick', 'mail']
   requiredFields: []
