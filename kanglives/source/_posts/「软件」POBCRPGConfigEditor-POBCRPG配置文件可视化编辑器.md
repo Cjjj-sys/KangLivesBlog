@@ -1,5 +1,4 @@
 title: 「软件」POBCRPGConfigEditor - POBCRPG配置文件可视化编辑器
-author: KangKang
 tags:
   - Terraria
   - 软件
