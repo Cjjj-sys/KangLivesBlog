@@ -1,5 +1,5 @@
 ---
-title: bds-tutorial-2
+title: 「教程」从零开始一步步搭建我的世界基岩版服务器 (Linux) 2
 date: 2023-01-26 12:00:18
 tags: 
     - Minecraft Bedrock Edition
@@ -12,7 +12,7 @@ cover: https://s2.loli.net/2023/01/26/a4nf27hRLBdNqlx.png
 ---
 ### [教程]从零开始一步步搭建我的世界基岩版服务器 (Linux) 2
 
-##### 2. 进入服务器并调整 server.properties 设置https://s2.loli.net/2023/01/26/a4nf27hRLBdNqlx.pnghttps://s2.loli.net/2023/01/26/a4nf27hRLBdNqlx.pnghttps://s2.loli.net/2023/01/26/a4nf27hRLBdNqlx.pnghttps://s2.loli.net/2023/01/26/a4nf27hRLBdNqlx.phttps://s2.loli.net/2023/01/26/a4nf27hRLBdNqlx.png
+##### 2. 进入服务器并调整 server.properties 设置
 
 ###### 2.1 进入服务器
 
