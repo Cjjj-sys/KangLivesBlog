@@ -1,4 +1,4 @@
 # KangLivesBlog
 my bloig
 
-[Link](kanglives.top)
+[Link](https://kanglives.top)
